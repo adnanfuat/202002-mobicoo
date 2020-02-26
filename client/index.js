@@ -5,8 +5,8 @@ const test = () => console.log("başardım")
 
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.write(test());
-   
+    res.write('Merhaba Tamerim');
+    test();
     res.end();
   }).listen(8080);
 
